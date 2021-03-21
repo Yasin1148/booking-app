@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">BOOKING APP</string>
+
+    <string-array name="mulk_seciniz">
+        <item>Türünü seçiniz</item>
+        <item>Ev</item>
+        <item>Apart</item>
+        <item>Pansiyon</item>
+        <item>Otel</item>
+    </string-array>
+
+    <string-array name="il_seciniz">
+        <item>İl</item>
+        <item>Muğla</item>
+        <item>Antalya</item>
+        <item>İzmir</item>
+    </string-array>
+
+    <string-array name="ilce_seciniz">
+        <item>İlçe</item>
+        <item>Fethiye</item>
+        <item>Bodrum</item>
+        <item>Marmaris</item>
+    </string-array>
+
+    <string-array name="ısıtma_türü">
+       <item>Isıtma Türünü Seçiniz</item>
+        <item>Klima</item>
+        <item>Doğalgaz(Kombi)</item>
+        <item>Doğalgaz(Merkezi Sitem)</item>
+        <item>Soba</item>
+    </string-array>
+
+    <string-array name="oda_sayisi">
+        <item>Oda Sayısı</item>
+        <item>1</item>
+        <item>1(Geniş Oda)</item>
+        <item>2(Çift Kişilik)</item>
+        <item>1+1</item>
+        <item>2+1</item>
+        <item>3+1</item>
+    </string-array>
+
+    <string-array name="kat_bilgisi">
+        <item>Kat Bilgisi</item>
+        <item>Zemin Kat</item>
+        <item>1. Kat</item>
+        <item>2. Kat</item>
+        <item>3. Kat</item>
+        <item>4. Kat</item>
+        <item>5. Kat</item>
+    </string-array>
+</resources>

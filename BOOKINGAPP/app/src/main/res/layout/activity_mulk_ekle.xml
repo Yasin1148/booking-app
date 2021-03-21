@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.mulk_ekle">
+
+    <Spinner
+        android:id="@+id/spinner_ilce"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_mturu"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_mtur" />
+
+    <TextView
+        android:id="@+id/textView_mturu"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:paddingTop="15dp"
+        android:text="Mülk Türünü Seçiniz :"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_mtur"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_baslik"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:paddingTop="15dp"
+        android:text="Mülk Başlığını Giriniz  :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_il"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mturu"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_mkonum"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:paddingTop="15dp"
+        android:text="Lütfen Konumu Seçiniz :"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_baslik"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_madres"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:paddingTop="15dp"
+        android:text="Açık Adresinizi Giriniz   :"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mkonum"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_mresim"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="120dp"
+        android:paddingTop="15dp"
+        android:text="Mülkün Resmini Giriniz :"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_madres"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinner_mtur"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:entries="@array/mulk_seciniz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    
+    <Spinner
+        android:id="@+id/spinner_il"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/spinner_ilce"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_mkonum"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_mtur" />
+
+    <EditText
+        android:id="@+id/edittext_mbaslik"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_baslik"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_mtur" />
+
+    <EditText
+        android:id="@+id/edittext_acikadres"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_madres"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_ilce" />
+
+    <ImageView
+        android:id="@+id/imageView_mulkresmi"
+        android:layout_width="141dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="4dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_mresim"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_kayit_tamamla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="KAYITI TAMAMLA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_isitma"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:text="Isıtma Türü :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_mulkresmi" />
+
+    <Spinner
+        android:id="@+id/spinner_isitma"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/ısıtma_türü"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_isitma"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_mulkresmi"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_oda_sayisi"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="15dp"
+        android:text="Oda Sayısı :"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_isitma" />
+
+    <Spinner
+        android:id="@+id/spinner_oda_sayisi"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:entries="@array/oda_sayisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_oda_sayisi"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_isitma" />
+
+    <TextView
+        android:id="@+id/textView_kat_bilgisi"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:paddingTop="15dp"
+        android:text="Kat Bilgisi :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_kat_bilgisi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_oda_sayisi" />
+
+    <Spinner
+        android:id="@+id/spinner_kat_bilgisi"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:entries="@array/kat_bilgisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_oda_sayisi" />
+
+    <TextView
+        android:id="@+id/textView_ucret"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:paddingTop="15dp"
+        android:text="Ücret Bilgisi :"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_kat_bilgisi" />
+
+    <EditText
+        android:id="@+id/editText_ucret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_kayit_tamamla"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox_gunluk"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/textView_ucret"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_kat_bilgisi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox_gunluk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:checked="true"
+        android:text="Günlük"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_kat_bilgisi"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox_aylik"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:checked="false"
+        android:text="Aylık"
+        app:layout_constraintBottom_toTopOf="@+id/btn_kayit_tamamla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_gunluk"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_gunluk"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
